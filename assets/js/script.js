@@ -28,3 +28,12 @@ console.log(allAdults); // returns false
 const comment = comments.find(comment => comment.id === 823423);
 console.log(comment); // returns item
 
+// Array.prototype.findIndex()
+// Find the comment with this ID
+// delete the comment with the ID of 823423
+const index = comments.findIndex(comment => comment.id === 823423);
+if (index !== -1) {
+  // Delete the comment at the found index
+  comments.splice(index, 1);
+}
+console.log(comments);
